@@ -14,8 +14,8 @@ st.markdown(
 )
 
 # === Inputs ===
-temp = st.slider("Temperature (°C)", 10, 35, 25)
-ph = st.slider("pH", 5.0, 9.0, 7.0)
+temp = st.slider("Temperature (°C)", 0, 100, 25)  # changed from 10–35 to 0–100
+ph = st.slider("pH", 0.0, 14.0, 7.0)            # changed from 5–9 to 0–14
 pond = st.number_input("Pond Size (m²)", 100, 10000, 1000)
 nutrients = st.slider("Nutrient Level (0–1)", 0.1, 1.0, 0.5)
 duckweed = st.number_input("Initial Duckweed (g)", 10, 200, 50)
